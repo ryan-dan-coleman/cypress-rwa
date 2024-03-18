@@ -127,7 +127,7 @@ describe("New Transaction", function () {
     cy.get("#transaction-create-amount-input-helper-text")
       .should("be.visible")
       // .and("contain", "Please enter a valid amount");
-      .and("contain", "Please enter a valid amount");
+      .and("contain", "Please enter a valid amount!");
 
     cy.getBySelLike("description-input").type("Fun").find("input").clear().blur();
     cy.get("#transaction-create-description-input-helper-text")
